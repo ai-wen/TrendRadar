@@ -203,7 +203,7 @@ presets:
     # 日计划 ── 把时间段组装成一天的安排
     day_plans:
       all_day:
-        periods: ["evening_summary"，"morning_push"]
+        periods: ["evening_summary","morning_push"]
 
     # 周映射 ── 每天用哪个日计划（1=周一 ... 7=周日）
     week_map:
