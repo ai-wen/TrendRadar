@@ -141,9 +141,10 @@ jobs:
           # 配置 git 用户信息
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+          cp -f output/index.html docs
           # 添加 output 目录
           git add output/
+          git add docs
           
           # 检查是否有变更
           if git diff --staged --quiet; then
