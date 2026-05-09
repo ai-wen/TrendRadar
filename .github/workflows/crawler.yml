@@ -133,7 +133,8 @@ jobs:
           S3_ENDPOINT_URL: ${{ secrets.S3_ENDPOINT_URL }}
           S3_REGION: ${{ secrets.S3_REGION }}
           GITHUB_ACTIONS: true
-        run: uv run python -m trendradar
+        run: ls
+        #uv run python -m trendradar
      
       - name: Commit and push output directory
         if: success()
